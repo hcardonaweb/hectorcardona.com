@@ -1,5 +1,5 @@
-export default function Brand() {
-    const brands = [
+export default function Technologies() {
+    const tech = [
         {
             id: 0,
             name: 'HTML',
@@ -32,8 +32,9 @@ export default function Brand() {
     ]
 
     return <div className="techBrands">
-        {brands.map((brand, index) => {
+        {tech.map((brand, index) => {
         return <div key={index} className="col">
+            <i className={brand.brandClass}></i>
             <p>{brand.brandClass}</p>
         </div>
     })}
