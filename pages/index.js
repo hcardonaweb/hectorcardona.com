@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div className={styles.container}>
-          <Head>
+      <Head>
         <title>Hector Cardona - Front-End Web Developer</title>
         <meta name="description" content="Built with Next.js &amp; React" />
         <link rel="icon" href="/favicon.ico" />

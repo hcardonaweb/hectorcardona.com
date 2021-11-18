@@ -1,42 +1,78 @@
+import styled from 'styled-components'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faHtml5,
+  faCss3,
+  faJsSquare,
+  faPhp,
+  faWordpressSimple,
+  faShopify,
+  faReact
+} from '@fortawesome/free-brands-svg-icons';
+
+library.add(
+  faHtml5,
+  faCss3,
+  faJsSquare,
+  faPhp,
+  faWordpressSimple,
+  faShopify,
+  faReact
+);
+
+
+const Wrapper = styled.section`
+    margin: 1rem 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 425px;    
+`;
+
+const Col = styled.div`
+    display: flex;
+    align-tems: center; 
+`;
+
 export default function Technologies() {
     const tech = [
         {
             id: 0,
             name: 'HTML',
-            brandClass: 'html5'
+            brandClass: <FontAwesomeIcon icon={['fab', 'html5']} />
         }, {
             id : 1,
             name : 'CSS',
-            brandClass : 'css3'
+            brandClass : <FontAwesomeIcon icon={['fab', 'css3']} />
         }, {
             id: 2,
             name: 'JS',
-            brandClass: 'js-square'
+            brandClass: <FontAwesomeIcon icon={['fab', 'js-square']} />
         }, {
             id: 3,
             name: 'PHP',
-            brandClass: 'php'
+            brandClass: <FontAwesomeIcon icon={['fab', 'php']} />
         }, {
             id: 4,
             name: 'Wordpress',
-            brandClass: 'wordpress-simple'
+            brandClass: <FontAwesomeIcon icon={['fab', 'wordpress-simple']} />
         }, {
             id: 5,
             name: 'Shopify',
-            brandClass: 'shopify'
+            brandClass: <FontAwesomeIcon icon={['fab', 'shopify']} />
         }, {
             id: 6,
             name: 'React',
-            brandClass: 'fab fa-react'
+            brandClass: <FontAwesomeIcon icon={['fab', 'react']} />
         },
     ]
 
-    return <div className="techBrands">
+    return <Wrapper>
         {tech.map((brand, index) => {
-        return <div key={index} className="col">
-            <i className={brand.brandClass}></i>
-            <p>{brand.brandClass}</p>
-        </div>
+        return <Col key={index} className="col">
+            {brand.brandClass}
+        </Col>
     })}
-    </div>
+    </Wrapper>
 }
