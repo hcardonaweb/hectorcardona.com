@@ -17,62 +17,25 @@ library.add(
   faJsSquare,
   faPhp,
   faWordpressSimple,
-  faShopify,
+  faShopify, 
   faReact
 );
 
 
-const Wrapper = styled.section`
-    margin: 1rem 0;
-    padding: 0 20px;
+const Icons = styled.div`
     display: flex;
     justify-content: space-between;
-    max-width: 425px;    
-`;
-
-const Col = styled.div`
-    display: flex;
-    align-tems: center; 
+    max-width: 450px;
 `;
 
 export default function Technologies() {
-    const tech = [
-        {
-            id: 0,
-            name: 'HTML',
-            brandClass: <FontAwesomeIcon icon={['fab', 'html5']} />
-        }, {
-            id : 1,
-            name : 'CSS',
-            brandClass : <FontAwesomeIcon icon={['fab', 'css3']} />
-        }, {
-            id: 2,
-            name: 'JS',
-            brandClass: <FontAwesomeIcon icon={['fab', 'js-square']} />
-        }, {
-            id: 3,
-            name: 'PHP',
-            brandClass: <FontAwesomeIcon icon={['fab', 'php']} />
-        }, {
-            id: 4,
-            name: 'Wordpress',
-            brandClass: <FontAwesomeIcon icon={['fab', 'wordpress-simple']} />
-        }, {
-            id: 5,
-            name: 'Shopify',
-            brandClass: <FontAwesomeIcon icon={['fab', 'shopify']} />
-        }, {
-            id: 6,
-            name: 'React',
-            brandClass: <FontAwesomeIcon icon={['fab', 'react']} />
-        },
-    ]
-
-    return <Wrapper>
-        {tech.map((brand, index) => {
-        return <Col key={index} className="col">
-            {brand.brandClass}
-        </Col>
-    })}
-    </Wrapper>
+    return <Icons>
+        <FontAwesomeIcon icon={['fab', 'html5']} />
+        <FontAwesomeIcon icon={['fab', 'css3']} />
+        <FontAwesomeIcon icon={['fab', 'js-square']} />
+        <FontAwesomeIcon icon={['fab', 'php']} />
+        <FontAwesomeIcon icon={['fab', 'wordpress-simple']} />
+        <FontAwesomeIcon icon={['fab', 'shopify']} />
+        <FontAwesomeIcon icon={['fab', 'react']} />
+    </Icons>
 }
