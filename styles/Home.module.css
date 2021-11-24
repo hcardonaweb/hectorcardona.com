@@ -6,14 +6,13 @@
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
  
 .footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
   justify-content: center; 
   align-items: center;
 }
@@ -22,7 +21,7 @@
 .fa-php:hover               { color:#787cb5; }
 .fa-css3:hover              { color:#2965f1; }
 .fa-html5:hover             { color:#f06529; }
-.fa-react:hover             { color:#61dbfb; }
+.fa-react:hover             { color:#61dbfb; } 
 .fa-shopify:hover           { color:#95bf47; }
 .fa-js-square:hover         { color:#f7df1e; }
 .fa-wordpress-simple:hover  { color:#00749c; }

@@ -12,9 +12,10 @@ body {
 }
 
 h1 {
-  font-size: 50px;
   margin: 1rem 0;
-  letter-spacing: .1rem;
+  font-size: 50px;
+  font-weight: 00;
+  letter-spacing: .1rem; 
 }
 
 a {

@@ -8,6 +8,7 @@ import Head from 'next/head'
 import Toggle from '../components/Toggl'
 import Hello from '../components/Hello'
 import Technologies from '../components/Technologies'
+import Construction from '../components/Construction';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -34,8 +35,9 @@ export default function Home() {
       <main className={styles.main}>
         {/*Pass the toggle functionality to the button*/}
         <Toggle theme={theme} toggleTheme={toggleTheme}/>
-        <Hello />
-        <Technologies />
+        {/* <Hello /> */}
+        {/*<Technologies />*/}
+        <Construction />
       </main>
     </div>
     </ThemeProvider>

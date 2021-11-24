@@ -23,9 +23,20 @@ library.add(
 
 
 const Icons = styled.div`
+    margin: 2em 0;
     display: flex;
     justify-content: space-between;
-    max-width: 450px;
+
+    @media (min-width: 768px) {
+      margin: 4em 1em;
+    }
+
+    svg {
+      height: 25px;
+       @media (min-width: 768px) {
+         height: 40px;
+       }
+    }
 `;
 
 export default function Technologies() {
@@ -33,9 +44,9 @@ export default function Technologies() {
         <FontAwesomeIcon icon={['fab', 'html5']} />
         <FontAwesomeIcon icon={['fab', 'css3']} />
         <FontAwesomeIcon icon={['fab', 'js-square']} />
+        <FontAwesomeIcon icon={['fab', 'react']} />
         <FontAwesomeIcon icon={['fab', 'php']} />
         <FontAwesomeIcon icon={['fab', 'wordpress-simple']} />
         <FontAwesomeIcon icon={['fab', 'shopify']} />
-        <FontAwesomeIcon icon={['fab', 'react']} />
     </Icons>
 }
