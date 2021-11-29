@@ -15,9 +15,10 @@ library.add(
  faSun
 );
 
-const TogglSection = styled.div` 
+const TogglSection = styled.nav` 
     display: flex;
     justify-content: flex-end;
+    margin: 2em 0;
 `;
 
 const Btn = styled.button`

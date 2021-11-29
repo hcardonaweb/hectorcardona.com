@@ -1,31 +1,23 @@
-import Image from 'next/image'
-import Programmer from '../src/img/undraw_programming_dark.svg'
 import styled from 'styled-components'
 
-const ImageWrap = styled.div `
-    display: flex;
-    align-items: center;
-    justify-content: center;
+const TextWrap = styled.section `
+    margin: 4em 0;
+    font-size: 21px;
 `
 
-const ComingSoon = styled.div `
-    text-align:center;
+const Emoji = styled.p `
+    font-size: 40px;
 `
 
 function Construction() {
-    return (
+return (
         <>
-            <ImageWrap>
-            <Image 
-                src={Programmer}
-                alt="Under Construction Vector"
-                width={800}
-                height={800}
-            />
-            </ImageWrap>
-            <ComingSoon>
-                <p>Currently under construction. Come back soon!</p>
-            </ComingSoon>
+            <TextWrap>
+                <p>Hi there!</p>
+                <p>We are currenlty under construction. Come back Soon!</p>
+                <Emoji>🚧 🚧 🚧</Emoji>
+                <p>- Hector C.</p>
+            </TextWrap>
         </>
     ) 
 }
