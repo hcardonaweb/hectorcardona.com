@@ -7,6 +7,10 @@ export const GlobalStyles = createGlobalStyle`
   *::before {
     box-sizing: border-box;
   }
+
+  ::selection { 
+    background: ${({ theme }) => theme.selection};
+  }
   
   body {
     background-color: ${({ theme }) => theme.body};
