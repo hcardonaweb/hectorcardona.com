@@ -3,10 +3,6 @@
   padding: 0 20px;
   max-width: 960px;
 }
-
-.main {
-  min-height: 100vh;
-}
  
 .footer {
   display: flex;
