@@ -38,7 +38,7 @@ const Toggle = ({ theme, toggleTheme, islight }) => {
     const icon = islight = theme === 'light' ? <FontAwesomeIcon icon={['far', 'sun']} /> : <FontAwesomeIcon icon={['far', 'moon']} />;
     return (
         <TogglSection>
-            <Btn onClick={toggleTheme}>
+            <Btn className="toggleTheme"onClick={toggleTheme}>
                 {icon}
             </Btn>
         </TogglSection>
