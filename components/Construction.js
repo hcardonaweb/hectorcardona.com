@@ -15,7 +15,7 @@ return (
             <TextWrap>
                 <p>Hi there!</p>
                 <p>We are currenlty under construction. Come back Soon!</p>
-                <Emoji>🚧 🚧 🚧</Emoji>
+                <Emoji>👨🏻‍💻 ☕️ 🎧</Emoji>
                 <p>- Hector C.</p>
             </TextWrap>
         </>

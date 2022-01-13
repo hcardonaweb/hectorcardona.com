@@ -26,8 +26,21 @@ export default function Home() {
     <GlobalStyles/>
     <Head>
       <title>Hector Cardona - Front-End Web Developer</title>
-      <meta name="description" content="Built with Next.js &amp; React" />
-      <link rel="icon" href="/favicon.ico" />
+      <meta 
+        name="description" 
+        content="Built with Next.js &amp; React" />
+      <meta 
+        name="theme-color" 
+        content="#5255E2"/>
+      <link 
+        rel="icon" 
+        href="/fire.png" />
+      <link
+        rel='preload'
+        href='/fonts/JetBrainsMono-Regular.ttf'
+        as='font'
+        crossOrigin=''
+      />
     </Head>
     <div className={styles.container}>
       <main className={styles.main}>
